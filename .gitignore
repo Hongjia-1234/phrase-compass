@@ -5,6 +5,7 @@ node_modules/
 dist/
 work/
 outputs/
+dogfood-output/
 *.log
 .env*
 .openai/
