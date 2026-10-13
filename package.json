@@ -1,0 +1,26 @@
+{
+  "name": "phrase-compass",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vinext dev --hostname 127.0.0.1",
+    "build": "vinext build && node scripts/postbuild.mjs",
+    "start": "vinext start --hostname 127.0.0.1",
+    "test": "node scripts/test-analyze.mjs && node scripts/test-rate-limit.mjs",
+    "test:offline": "node scripts/test-analyze.mjs && node scripts/test-rate-limit.mjs",
+    "test:rate-limit": "node scripts/test-rate-limit.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-server-dom-webpack": "^19.2.8",
+    "vinext": "1.0.0-beta.4",
+    "vite": "^8.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-rsc": "^0.5.32"
+  }
+}
